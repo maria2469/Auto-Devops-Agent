@@ -1,12 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import tailwindcss from '@tailwindcss/vite'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
-// https://vite.dev/config/
 export default defineConfig({
-  base: '/Auto-Devops-Agent/', // 👈 Correct location for the base path
-  plugins: [
-    react(),
-    tailwindcss()
-  ]
-})
+  base: '/Auto-Devops-Agent/', // <-- This is critical for GitHub Pages
+  plugins: [react(), tailwindcss()],
+});
